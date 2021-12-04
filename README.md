@@ -1,5 +1,7 @@
 # Satyanveshi Security Scanner
-The Satyanveshi is a security scanner which can perform various security related tasks such as port scanning, host discovery and spidering. Basic vulnerabilty scanning is still in progress.
+Dynamic and basic security scanner with functionality of host discovery, port scanning, spidering and vulnerability scanning. Basic vulnerabilty scanning is still in progress.
+
+![image](https://user-images.githubusercontent.com/75296055/144710871-92286c9d-8e71-4f53-98b8-69f75976a04d.png)
 
 Current version available is 2021.3.1.
 
@@ -11,9 +13,11 @@ Current version available is 2021.3.1.
 `python3 main.py <target> <modes>`
 
 -Options
-
-`--portscan         Scan ports`
-
-`--spider           Spider`
-
-`--hostdiscovery    Discover hosts`
+Usage: python3 main.py <option(s)> <target> <other-options(optional)>
+    --portscan          Scan ports
+       -sF:             Full scan. Scan 63000 ports.
+       -sH:             Half scan. Scan 30000 ports.
+       -sB:             Baby scan. Scan 1000 ports.
+    --spider            Spider
+    --hostdiscovery     Discover hosts
+    --vulnscan (alpha)  Vulnerability Scan
