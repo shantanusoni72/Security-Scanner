@@ -20,4 +20,3 @@ def hostdiscovery(url):
             connection.close()
         else:
             pass
-        

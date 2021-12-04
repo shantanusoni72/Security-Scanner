@@ -14,7 +14,7 @@ def getDomains(rawData):
     return domains
 
 def getInput():
-    if sys.argv[1] == "--scan":
+    if sys.argv[1] == "--spider":
         url = "https://" + str(sys.argv[2])
         return url
     elif sys.argv[1] == "--portscan":
